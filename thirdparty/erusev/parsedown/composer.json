@@ -1,0 +1,38 @@
+{
+    "name": "erusev\/parsedown",
+    "description": "Parser for Markdown.",
+    "keywords": [
+        "markdown",
+        "parser"
+    ],
+    "homepage": "http:\/\/parsedown.org",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emanuil Rusev",
+            "email": "hello@erusev.com",
+            "homepage": "http:\/\/erusev.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit\/phpunit": "^4.8.35"
+    },
+    "autoload": {
+        "psr-4": {
+            "RS_Vendor\\Parsedown\\": "\/Parsedown\/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RS_Vendor\\TestParsedown\\": "test\/TestParsedown\/",
+            "RS_Vendor\\ParsedownTest\\": "test\/ParsedownTest\/",
+            "RS_Vendor\\CommonMarkTest\\": "test\/CommonMarkTest\/",
+            "RS_Vendor\\CommonMarkTestWeak\\": "test\/CommonMarkTestWeak\/"
+        }
+    }
+}
